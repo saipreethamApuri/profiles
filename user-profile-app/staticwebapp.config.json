@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "route": "/profile/*",
+      "serve": "/public/index.html",
+      "statusCode": 200
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/user-profile-app/public/index.html"
+  }
+} 
