@@ -3,7 +3,7 @@ name: profiles-app
 on:
   push:
     branches:
-      - main
+      - path-based-approach
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
