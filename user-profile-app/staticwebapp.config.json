@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "route": "profile/remoteEntry.js",
+      "headers": {
+        "Content-Type": "application/javascript"
+      }
+    },
+    {
+      "route": "profile/*.js",
+      "headers": {
+        "Content-Type": "application/javascript"
+      }
+    },
+    {
+      "route": "/profile/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/static/media/*.{png,jpg,jpeg,gif,bmp}", "/static/css/*"]
+  },
+  "mimeTypes": {
+    ".js": "application/javascript"
+  }
+} 
