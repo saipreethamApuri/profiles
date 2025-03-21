@@ -1,19 +1,19 @@
 {
   "routes": [
     {
-      "route": "/remoteEntry.js",
+      "route": "/profile/remoteEntry.js",
       "headers": {
         "Content-Type": "application/javascript"
       }
     },
     {
-      "route": "/*.js",
+      "route": "/profile/*.js",
       "headers": {
         "Content-Type": "application/javascript"
       }
     },
     {
-      "route": "/*",
+      "route": "/profile/*",
       "serve": "/index.html",
       "statusCode": 200
     }
