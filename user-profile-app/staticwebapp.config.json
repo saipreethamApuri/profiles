@@ -5,7 +5,11 @@
   },
   "routes": [
     {
-      "route": "/*",
+      "route": "/*",      
+      "allowedOrigins": ["*"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      },
       "serve": "/index.html",
       "statusCode": 200
     }
